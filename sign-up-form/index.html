@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sing up Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="cta">
+      <div class="img-box">
+        <div class="logo-box">
+          <img class="logo" src="img/odin-logo.png" alt=" Odin logo" />
+          <p class="logo-text">Odin</p>
+        </div>
+      </div>
+      <div class="form-box">
+        <h2>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up
+          <em>now</em>
+          to get started.
+        </h2>
+        <h2>You <em>know</em> you want to.</h2>
+        <form>
+          <fieldset>
+            <h3>Let's do this!</h3>
+            <fieldset>
+              <div class="form-group">
+                <label for="first_name">First Name</label>
+                <input type="text" id="first_name" name="first_name" />
+              </div>
+              <div class="form-group">
+                <label for="last_name">Last Name</label>
+                <input type="text" id="last_name" name="last_name" />
+              </div>
+            </fieldset>
+            <fieldset>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" />
+              </div>
+              <div class="form-group">
+                <label for="phone"> Phone Number</label>
+                <input type="number" name="phone" id="phone" />
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <div class="form-group">
+                <label for="password"> Password</label>
+                <input type="password" id="password" name="password" required />
+              </div>
+              <div class="form-group">
+                <label for="confirm_password"> Confirm Password</label>
+                <input
+                  type="password"
+                  id="confirm_password"
+                  name="confirm_password"
+                  required
+                />
+              </div>
+            </fieldset>
+          </fieldset>
+          <button type="submit">Create Account</button>
+          <p>Already have an account? <a href="#">Log in</a></p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

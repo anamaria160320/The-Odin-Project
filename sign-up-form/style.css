@@ -1,0 +1,143 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Norse-Bold;
+  src: url(Norse-Bold.otf);
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.cta {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.img-box {
+  width: 70%;
+  background-image: url(img/leaf.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  top: 30%;
+  transform: translateY(-30%);
+}
+
+.logo-text {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: Norse-Bold;
+  font-size: 10rem;
+}
+.logo {
+  width: 30%;
+}
+
+h2 {
+  text-align: left;
+  font-size: 2.2rem;
+
+  margin: 10rem 15rem 0 5rem;
+}
+
+h2:nth-child(2) {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+fieldset {
+  border: none;
+}
+fieldset:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+fieldset:first-child {
+  box-shadow: 0 6px 15px 5px rgba(0, 0, 0, 0.1);
+  padding: 2rem 5rem;
+}
+
+.form-group {
+  display: inline-block;
+  margin-right: 20rem;
+}
+
+label {
+  display: block;
+  font-size: 1.2rem;
+  color: #000;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+input {
+  width: 175%;
+  height: 3rem;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: black;
+}
+
+input:focus {
+  outline: 1px solid blue;
+}
+
+input:invalid {
+  outline: 1px solid red;
+}
+button {
+  margin-left: 5rem;
+  border-radius: 5px;
+  padding: 1.5rem 3.5rem;
+  width: 30%;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.5rem;
+  background-color: #596d48;
+  margin-bottom: 2rem;
+}
+
+p {
+  margin-left: 5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #596d48;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+a:hover,
+a:active {
+  color: #739f4c;
+  font-weight: 700;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      console.log("Hello, World!"); //similar with cout in c++;
+      let name = "John"; // declaration of variables
+      let surname = "Doe";
+
+      console.log(name);
+      console.log(surname);
+
+      let age = 54;
+
+      console.log(age);
+
+      age = 4;
+      console.log(age);
+
+      const pi = 3.14; //declaration of constants
+
+      console.log(pi);
+
+      let calc = 3 + 2 - 76 * (1 + 1);
+      console.log(calc);
+
+      console.log(12 + 24);
+
+      console.log(144 + 23 + 6 + 8 + 0 + 6 + 4 + 980);
+
+      console.log((4 + 6 + 9) / 77);
+
+      let a = 10;
+
+      console.log(a);
+      console.log(9 * a);
+
+      let b = 7 * a;
+
+      console.log(b);
+
+      let max = 57;
+      let actual = max - 13;
+      let percentage = actual / max;
+      console.log(percentage);
+
+      function add7(number) {
+        return number + 7;
+      }
+
+      function multiply(num1, num2) {
+        return num1 * num2;
+      }
+
+      function capitalize(word) {
+        let char = word.at(0);
+        char = char.toUpperCase();
+        word = word.slice(1);
+        return char + word;
+      }
+
+      function lastLetter(word) {
+        if (word.length == 0) return word;
+        let lg = word.length;
+        return word.slice(lg - 1);
+      }
+    </script>
+  </body>
+</html>
