@@ -3,24 +3,29 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: #09b0f8;
+  width: 50%;
+  height: 70vh;
 }
 
 .calculator {
   width: 100%;
+  height: 100%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 
   background-color: rgb(4, 109, 109);
   border-radius: 3px;
-  padding: 5px;
+  padding: 10px;
 }
 
 .display {
   width: 100%;
-  height: 30px;
+  height: 150px;
   background-color: black;
   color: #09b0f8;
   text-align: right;
+  font-size: 2rem;
   grid-column: 1 / 6;
   border-radius: 3px;
   margin-bottom: 5px;
@@ -29,6 +34,7 @@
 .key {
   background-color: #346072;
   border-color: black;
+  font-size: 2rem;
   color: #fff;
 }
 
