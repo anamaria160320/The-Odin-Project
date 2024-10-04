@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="javascript.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>My library</h1>
+      <button class="add-book" id="addBook">Add Book</button>
+    </header>
+    <div class="container">
+      <div class="books">
+        <div class="book-card">
+          <svg
+            class="book-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <title>bookshelf</title>
+            <path
+              d="M9 3V18H12V3H9M12 5L16 18L19 17L15 4L12 5M5 5V18H8V5H5M3 19V21H21V19H3Z"
+            />
+          </svg>
+          <div class="book-name">
+            <p class="card-text">Title:</p>
+          </div>
+
+          <div class="author-name">
+            <p class="card-text">Author:</p>
+          </div>
+          <div class="numOfpages">
+            <p class="card-text">Pages:</p>
+          </div>
+          <div class="isItRead">
+            <p class="card-text">Read:</p>
+          </div>
+          <div class="card-btns">
+            <button class="btn btn-blue" id="isItRead"></button>
+            <button class="btn btn-pink" id="delete">Delete</button>
+          </div>
+        </div>
+        <dialog id="dialog">
+          <h2>Add a new book</h2>
+          <form method="dialog">
+            <div>
+              <label for="name"> Book name</label>
+              <input type="text" id="name" required />
+            </div>
+            <div>
+              <label for="author"> Author name</label>
+              <input type="text" id="author" required />
+            </div>
+            <div>
+              <label for="pages"> Number of pages</label>
+              <input type="text" id="pages" required />
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="read" />
+              <label for="read"> Read?</label>
+            </div>
+            <div class="form-btns">
+              <button class="btn btn-blue" id="submit">Submit</button>
+              <button class="btn btn-pink" id="cancel">Cancel</button>
+            </div>
+          </form>
+        </dialog>
+      </div>
+    </div>
+  </body>
+</html>
